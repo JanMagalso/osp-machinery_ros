@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>株式会社 薩摩商会</title>
+	
+<meta name="keywords" content="段ボールケース,包装資材一式,化粧箱,プラスチック段ボール,パレット・スキット,強化段ボール,発泡スチロール">
+<meta name="description" content="常に包装の合理化を見つめ、安心（価格･品質･納期）をお届けします。">
+
+<meta name="keywords" content="段ボールケース,包装資材一式,化粧箱,プラスチック段ボール,パレット・スキット,強化段ボール,発泡スチロール, @@(pagetitle)@@">
+<meta name="description" content="常に包装の合理化を見つめ、安心（価格･品質･納期）をお届けします。">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="shortcut icon" href="../common/images/favicon.ico">
+
+<link href="../common/css/normalize.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/base.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/component.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/style_sp.css" rel="stylesheet" type="text/css" media="all">
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="../common/css/slick.css">
+<link rel="stylesheet" type="text/css" href="../common/css/slick-theme.css">
+<script src="../common/js/jquery-2.1.3.min.js"></script>
+<script src="common/js/iscroll.js"></script>
+
+<script src="common/js/owl.carousel.js"></script>
+<script src="../common/js/custom.js"></script>
+<!--
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcuIt3gMm81Q3RVi5Kz97nJjdUQY5Y-Y"></script>
+ Global site tag (gtag.js) - Google Analytics 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N567XCEZET"></script>
+-->
+
+</head>
+
+	<body id="@@(id)@@" class="@@(class)@@">
+      <section class="navbar-section">
+<!--
+		<div class="l_main_contents top l_wrap u_sp_display_flex space_between u_sp">
+			<div>
+				<h1 class="site-branding">
+				<a href="../index.html">
+					<span>
+						株式<br>会社
+					</span>
+					薩摩商会
+				</a>
+			</h1>
+			</div>
+			<div class="c_hamburger"><img src="../common/images/hamburger.png"></div>
+	  	</div>
+-->
+        <div class="l_wrap u_display_flex space_between">
+          	<h1 class="site-branding u_pc">
+				<img src="../common/images/osp_logo.png">
+			</h1>
+          <nav class="c_nav_type02 ">  
+            <ul class="c_nav">
+              <li class="top"><a href="../index.html">
+               HOME 
+              </a></li>
+              <li class="service"><a href="../service/index.html">
+               PRODUCT 
+              </a></li>
+              <li class="product"><a href="../product/index.html">
+               FACILITY  
+              </a></li>
+              <li class="outline"><a href="../outline/index.html">
+                COMPANY 
+              </a></li>
+              <li class="contacts"><a href="../contacts/index.html">
+               CONTACT
+				  
+              </a></li>
+              </ul>
+            </nav>
+        </div>
+        </section>
+
+			<section>
+		  <div class="l_bg">
+		    <div class="clearfix">
+		      <div class="l_main_contents">
+		           <div>
+						<div class=" u_pc" style="width: 100%;">
+							<img src="../common/images/section01_bg.png" width="100%" alt="">
+							<div class="l_wrap best-press title">
+								<h1>事業紹介</h1>
+							</div>
+						</div>
+					
+				  </div>
+		        </div>		
+	        </div>
+	      </div>
+	    </section>
+			<div>HERE LIES ALL THE CONTENT</div>
+	<div class="l_wrap" style="position: relative;">
+		<p class="l_pagetop top_btn" style="display: block;"><a href="#">▲ページの先頭へ</a></p>
+		</div>
+	<section>
+		<footer class="l_footer_area">
+         <div class="l_wrap l_contact_area">
+				<div>
+					<h1 class="site-branding footer">
+						<a href="../index.html">
+							<span>
+								株式<br>会社
+							</span>
+							薩摩商会
+						</a>
+					</h1>
+					<p class="c_telephone">兵庫県神戸市東灘区深江浜町54 TEL 078-451-5771</p>
+				</div>
+				<div class="u_ALright">
+					<p class="l_privacy_policy">個人情報保護方針</p>
+					<p class="u_pc">Copyright ©satsumashokai All Rights Reserved.</p>
+				</div>
+		</div>
+	  </footer>
+</section>
+</body>	
+	<script>
+		  // Carousel
+		  $('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: false,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: false,
+			responsive: {
+			  0: {
+				items: 1
+			  }
+			}
+		  })
+	</script>
+</html>

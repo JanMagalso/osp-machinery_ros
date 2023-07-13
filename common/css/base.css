@@ -1,0 +1,218 @@
+@charset "utf-8";
+/*
+htmlやbody、a要素など、タグに直接設定するものを記述します。
+Things that will be set directly and tags such as HTML, body and a element will be written.
+
+このカテゴリーのみ、接頭辞から始まりません。
+Only this category will not begin with the prefix.
+
+フォントサイズはremで指定します。
+Font size will be set as "rem".
+
+↓↓↓↓↓↓コメントアウト表記サンプル Comment out sample ↓↓↓↓↓↓
+*/
+/*----------------------------------------------
+	大くくりコメントアウト large part
+---------------------------------------------*/
+
+/*  中くくりコメントアウト middle part
+------------------------------------- */
+
+/* 小くくりコメントアウト small part */
+/*
+↑↑↑↑↑↑コメントアウト表記サンプル Comment out sample ↑↑↑↑↑↑
+
+*/
+/*----------------------------------------------
+	html
+---------------------------------------------*/
+html { font-size: 62.5%; }
+/*↑ 10pxが1remとなる様に調整*/
+
+/*----------------------------------------------
+	body
+---------------------------------------------*/
+body {
+	min-width: 960px;
+  font-size: 15px;
+  font-size: 1.6rem;/*↑ remをサポートしていないブラウザ向けにpxでも指定　Set as "px" for browsers that don't support "rem"*/
+  /*↓使用時のみコメントアウト外す Remove comment out only during use.*/
+  font-family: "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+/*スタンダードゴシック（Standard sans-serif）
+  /*font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;*/ /*モダンゴシック（Modern sans-serif）*/
+  /* font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;*/
+  color: #0f1933;
+}
+
+hr{
+	border-width: 0.3px;
+}
+/*----------------------------------------------
+	a
+---------------------------------------------*/
+a {
+	color: #0f1933;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus { 
+	cursor: pointer;
+	color: #0C569E;
+}
+
+/*----------------------------------------------
+	table
+---------------------------------------------*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------------------
+	h1,h2,h3,h4,h5,h6
+---------------------------------------------*/
+h1,h2,h3,h4,h5,h6{ margin: 0; }
+/*----------------------------------------------
+	*
+---------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+	border-style: hidden;
+}
+
+button a:hover{
+	background: #fc0d18;
+	color: #FFFFFF
+}
+ul li span{
+	cursor: pointer;
+}
+/*--------------------------------------------------------------
+## Owl Carousel - Core
+--------------------------------------------------------------*/
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; 
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */ 
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; 
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); 
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); 
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; 
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%; 
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none; 
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.owl-carousel.owl-loaded {
+  display: block; 
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; 
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0; 
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden; }
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab; 
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl; 
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; 
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; 
+}
+
+/*
+li a::before{
+	content: url("../images/icon_bullet.png");
+    display: inline-block;
+    width: 1em;
+    font-size: 20px;
+}*/
